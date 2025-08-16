@@ -1,3 +1,6 @@
+const rapidApiHost = '';
+const rapidApiKey = '';
+
 class AuthenticationManager {
     constructor() {
     }
@@ -25,7 +28,7 @@ class AuthenticationManager {
         try {
             const response = await fetch('/api/get_session', {
                 method: "GET",
-                headers: {'Authorization': token}
+                headers: {'Authorization': token, 'X-RapidAPI-Host': rapidApiHost, 'X-RapidAPI-Key': rapidApiKey}
             });
             return response.ok;
         } catch {
@@ -38,6 +41,7 @@ class AuthenticationManager {
             const response = await fetch('/api/logout', {
                 method: 'GET',
                 credentials: "include",
+                headers: {'X-RapidAPI-Host': rapidApiHost, 'X-RapidAPI-Key': rapidApiKey}
             });
             localStorage.setItem("Authorization", null);
             return response.ok;
@@ -51,7 +55,7 @@ class AuthenticationManager {
         try {
             const response = await fetch('/api/signup', {
                 method: 'POST',
-                headers: {'Content-Type': 'application/json'},
+                headers: {'Content-Type': 'application/json','X-RapidAPI-Host': rapidApiHost, 'X-RapidAPI-Key': rapidApiKey},
                 body: JSON.stringify(form)
             });
 
@@ -76,7 +80,7 @@ class AuthenticationManager {
         try {
             const response = await fetch('/api/login', {
                 method: 'POST',
-                headers: {'Content-Type': 'application/json'},
+                headers: {'Content-Type': 'application/json','X-RapidAPI-Host': rapidApiHost, 'X-RapidAPI-Key': rapidApiKey},
                 body: JSON.stringify(form)
             });
 

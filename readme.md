@@ -48,3 +48,20 @@ In your `vite.config.js`, update the following section with the **IP address of 
     changeOrigin: true,
     rewrite: (path) => path.replace(/^\/api/, ''),
 },
+```
+
+## RapidApi Setup
+
+```js
+'/api': {
+    target: 'https://otp-authentication-api-email.p.rapidapi.com',
+    changeOrigin: true,
+    rewrite: (path) => path.replace(/^\/api/, ''),
+},
+```
+
+Also add 'X-RapidAPI-Host' & 'X-RapidAPI-Key' to the header by filling those  variables in authentication.js
+
+```js
+const rapidApiHost = '';
+const rapidApiKey = '';

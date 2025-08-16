@@ -3,4 +3,5 @@
 /doc/
 /package-lock.json
 /.vite/
+/install/
 /.idea/

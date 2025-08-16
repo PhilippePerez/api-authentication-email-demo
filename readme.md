@@ -16,7 +16,7 @@ The API is available in two modes:
 #### Linux
 This will download the image from docker hub
 
-> docker run -v ~/authentication_api:/app --name authentication --rm philippeperezmailauth.philippe-perez.com:V1_0_0"
+> docker run -v ~/authentication_api:/app --name authentication --rm philippeperezmailauth.philippe-perez.com:V1_0_1"
  -config /app/config.ini
 
 

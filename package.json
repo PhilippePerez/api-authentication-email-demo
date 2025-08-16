@@ -1,0 +1,40 @@
+{
+  "author": "Philippe Perez",
+  "description": "",
+  "name": "api-authentication-email-demo",
+  "private": false,
+  "type": "module",
+  "version": "0.1.0",
+  "exports": {
+    ".": {
+      "import": "./dist/application-template.mjs",
+      "require": "./dist/application-template.umd.js"
+    }
+  },
+  "scripts": {
+    "build": "vite build",
+    "deploy": "scp -r ./dist/* root@root@server1.philippe-perez.com:/var/www/api-authentication-email-demo.com",
+    "dev": "vite",
+    "preview": "vite preview",
+    "setup": "npm install",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "highlight.js": "^11.11.1",
+    "vue": "^3.5.12",
+    "vue-component-toolkit": "^0.1.29",
+    "vue-i18n": "^11.0.0-beta.2",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.4",
+    "@vue/test-utils": "^2.4.6",
+    "autoprefixer": "^10.4.20",
+    "jsdom": "^25.0.1",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "vite": "^5.4.11",
+    "vite-plugin-vue-devtools": "^7.5.4",
+    "vitest": "^2.1.8"
+  }
+}

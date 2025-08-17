@@ -5,7 +5,7 @@ This demo project demonstrates how to integrate the **Email-based Authentication
 The API is available in two modes:
 
 - **Docker container** – Install and run it on your company’s infrastructure.
-- **Hosted service** – Access it directly via [RapidShare](#).
+- **Hosted service** – Access it directly via [RapidApi](https://rapidapi.com/philippe234/api/otp-authentication-api-email/playground/apiendpoint_4857c8a4-155f-4160-86ca-829914691fb7).
 
 ---
 
@@ -20,7 +20,7 @@ This will download the image from docker hub
  -config /app/config.ini
 
 
-More infos on https://hub.docker.com/repository/docker/philippeperez/api-authentication-email/general
+More infos on [DockerHub](https://hub.docker.com/repository/docker/philippeperez/api-authentication-email/general)
 
 ### 2. Configure the Front-end
 

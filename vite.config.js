@@ -9,8 +9,8 @@ export default defineConfig({
     server: {
         proxy: {
             '/api': {
-                // target: 'http://172.17.0.2:5001',
-                target: 'https://otp-authentication-api-email.p.rapidapi.com',
+                target: 'http://172.17.0.2:5001',
+                // target: 'https://otp-authentication-api-email.p.rapidapi.com',
                 changeOrigin: true,
                 rewrite: (path) => path.replace(/^\/api/, ''),
             },

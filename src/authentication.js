@@ -1,5 +1,8 @@
-const rapidApiHost = '';
-const rapidApiKey = '';
+const rapidApiHost = '';    // X-RapidAPI-Host:
+const rapidApiKey = '';     // X-RapidAPI-Key:
+
+
+
 
 class AuthenticationManager {
     constructor() {
